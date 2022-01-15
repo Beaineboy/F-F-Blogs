@@ -429,11 +429,11 @@ nav .navbar .logo a{
   .search-box .input-box  .submit:hover{
     position: absolute;
     top: 50%;
-    left: 91%;
+    left: 89%;
     border-radius: 4px;
     transform: translate(-50%, -50%);
     height: 35px;
-    width: 38px;
+    width: 14px;
     outline: none;
     padding: 0 15px;
     border: none;
