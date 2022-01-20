@@ -398,7 +398,7 @@ nav .navbar .links li:hover .js-sub-menu{
 
 .title {
   color: #1498a4;
-  font-size: 10rem;
+  font-size: 7rem;
   margin-bottom: 1rem;
 }
 
@@ -411,6 +411,7 @@ nav .navbar .links li:hover .js-sub-menu{
 p{
   padding-top: 4px;
   padding-bottom: 30px;
+  font-size: 1.5rem;
 }
 
 
@@ -485,50 +486,7 @@ p{
       font-size:55%;
   }
 
-  header{
-      padding:1.5rem 1rem;
-  }
-
-  .row{
-      flex-direction: column-reverse;
-      margin: 50px 0;
-  }
-  .col-2{
-      flex-basis: 100%;
-      margin-bottom: 50px;
-  }
-
- 
-  .color-box{
-      transform: translate(75px);
-  }
-  .col-1{
-      flex-basis: 100%;
-  }
-  .col-1 h2{
-      font-size: 25px;
-  }
-  .col-1 h3{
-      font-size: 15px;
-  }
-  .col-1::after{
-      content: '';
-      width: 10px;
-      height: 88%;
-      background: linear-gradient(#ff469f, #ff6062);
-      position: absolute;
-      left: -40px;
-      top: 8px;
-  }
   
-  .container{
-      grid-template-columns: repeat(2, 1fr);
-      padding: 2rem 50px;
-  }
-  .skill-icon{
-      width: 500px;
-  
-  }
 
   .box-container{
       margin-top: 30px;
@@ -761,18 +719,10 @@ p{
     font-size: 15px;
   }
 
-  .portfolio .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding-top: 70px;
-    padding-bottom: 20px;
-    margin-left: 29px;
-    padding-right: 33px;
-    width: 100%;
-  }
-
+ 
 }
+
+
 @media (max-width:800px){
   /* nav{
     position: relative;
@@ -873,16 +823,7 @@ nav .navbar .links li .sub-menu li{
       transform: rotate(90deg);
     }
 
-    .portfolio .box-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      padding-top: 70px;
-      padding-bottom: 20px;
-      margin-left: 29px;
-      padding-right: 33px;
-      width: 100%;
-    }
+    
 
     p{
       padding-top: 5rem;
@@ -972,7 +913,7 @@ nav .navbar .logo a{
   
   }
 
-  .portfolio .box-container {
+  /* .portfolio .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -981,7 +922,7 @@ nav .navbar .logo a{
     margin-left: 29px;
     padding-right: 33px;
     width: 100%;
-  }
+  } */
 
   p{
     padding-top: 5rem;
@@ -991,3 +932,108 @@ nav .navbar .logo a{
 
 
 }
+
+@media (max-width:1500px){
+  html{
+    font-size:50%;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+}  
+ 
+.container{
+    grid-template-columns: 1fr;
+    padding: 2rem 50px;
+}
+
+.skill-icon{
+    width: 300px;
+
+}
+
+
+.box-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding:20px;
+}
+
+
+.box{
+    
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .9rem;
+    overflow:hidden;
+    background: #fff;
+    flex:1 1 30rem;
+    
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    margin: 2rem 0;
+  }
+  
+  .preview {
+    width: 100%;
+    margin: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+  }
+  
+  .preview img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.9;
+   
+  }
+
+  
+  
+  .preview img:hover {
+    opacity: 1;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+  
+  .title {
+    color: #1498a4;
+    font-size: 5rem;
+    margin-bottom: -4rem;
+  }
+  
+  .title a {
+    color: #1498a4;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+
+  p{
+     padding-top: 5rem;
+    padding-bottom: 0px; 
+    font-size: 1.5rem;
+    
+    /* display: none; */
+  }
+
+}
+
+ 
