@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+    
+  <head>
+    <meta charset="UTF-8">
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+   <!-- <title> Responsive Drop Down Navigation Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="project.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Frontend-</a>Friendly</div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Main Menu</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">HTML & CSS</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Login Forms</a></li>
+              <li><a href="#">Card Design</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Neumorphism</a></li>
+                  <li><a href="#">Pre-loader</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">JAVASCRIPT</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text"  placeholder="Search..."></input>
+          <a href="index.html">
+            <button class="submit"> <i class='bx bx-search'></i></button>
+          </a>
+           
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- my projects 2 -->
+
+<div class="box-container">
+    <div class="projects">
+        <div class="box">
+            <div class="project">
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="https://beaineboy.github.io/real-estate-project/index2.html">
+                            <h5>Project 03</h5>
+                        </a>
+                    </div>
+                   <!-- <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perspiciatis maxime quasi, sint a alias ipsa optio, corrupti quam dicta quod aperiam dolores harum numquam, laudantium excepturi? Asperiores, nesciunt nisi?</P>
+                             <div class="brief">
+                                <p>Sell Your Property to Genuine Buyers at Real Estate. It's Easy, Simple & Yes It's Free. Reach out to Buyers for Free. Post your ad on Real Estate.com Now!</p>
+                            </div> -->
+                </div>
+                <div class="preview">
+                    <a target="_blank" href="https://beaineboy.github.io/1st-portfolio/">
+                        <img src="images/House.png" alt="project image">
+                    </a>
+                </div>
+                <div class="entry-meta">
+                    <span class="entry-author">Frontend-Friendly</span>
+                    <span class="entry-time"><time class="published" datetime="2022-01-16T08:47:00-08:00">January 16, 2022</time></span>
+                    <span class="entry-comments-link show"><a href="#">3
+                    Comments</a></span>
+                    </div>
+
+                    <div class="social-links">
+                       <!-- <ul class="ok">  -->
+                           
+                        <!-- <li class="github">  -->
+                            <a href="https://github.com/Beaineboy" target="blank"><img src="images/github.png"></a> 
+                        <!-- </li> -->
+                        <!-- <li class="instagram"> -->
+                            <a href="https://www.instagram.com/beanie_boy_live/" target="blank"> <img src="images/insta icon.png"> </a> 
+                        <!-- </li> -->
+                        <!-- <li class="youtube"> -->
+                            <a href="https://www.youtube.com/channel/UC-v_ecEmdB1i5OOJ0xgMPZw" target="blank">  <img src="images/youtube.png">  </a> 
+                        <!-- </li> -->
+                     <!-- </ul> -->
+                    </div>
+
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perspiciatis maxime quasi, sint a alias ipsa optio, corrupti quam dicta quod aperiam dolores harum numquam, laudantium excepturi? Asperiores, nesciunt nisi?</P>
+                             
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <script>
+    // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+navbar.classList.toggle("showInput");
+if(navbar.classList.contains("showInput")){
+ searchBox.classList.replace("bx-search" ,"bx-x");
+}else {
+ searchBox.classList.replace("bx-x" ,"bx-search");
+}
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+navLinks.classList.toggle("show3");
+}
+
+// my project js
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+ menu.classList.toggle('fa-times');
+ header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+ menu.classList.remove('fa-times');
+ header.classList.remove('active');
+}
+
+let cursor1 = document.querySelector('.cursor-1');
+let cursor2 = document.querySelector('.cursor-2');
+
+window.onmousemove = (e) =>{
+ cursor1.style.top = e.pageY + 'px';
+ cursor1.style.left = e.pageX + 'px';
+ cursor2.style.top = e.pageY + 'px';
+ cursor2.style.left = e.pageX + 'px';
+}
+
+document.querySelectorAll('a').forEach(links =>{
+
+links.onmouseenter = () =>{
+ cursor1.classList.add('active');
+ cursor2.classList.add('active');
+}
+
+links.onmouseleave = () =>{
+ cursor1.classList.remove('active');
+ cursor2.classList.remove('active');
+}
+
+});
+
+</script>
+</body>
+</html>
